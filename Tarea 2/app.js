@@ -119,13 +119,6 @@ app.get('/libros/json', (req, res) => {
     res.json(biblioteca.libros);
 });
 
-app.get('/', (req, res) => {
-    res.json({
-      message: 'Welcome to the Books API',
-      endpoints: {
-           }
-    });
-  });
 
 // --- Servidor ---
 app.listen(PORT, () => {
